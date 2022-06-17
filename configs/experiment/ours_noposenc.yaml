@@ -1,0 +1,11 @@
+# @package _global_
+
+model:
+  transformer:
+    do_relative_positional: False
+    
+data:
+  temporal:
+    temporal_transformer: True
+
+experiment: ours

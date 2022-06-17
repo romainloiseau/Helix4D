@@ -1,0 +1,5 @@
+_target_: pytorch_lightning.callbacks.ModelCheckpoint
+
+monitor: IoU/val
+mode: max
+every_n_epochs: 1

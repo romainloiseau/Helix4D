@@ -1,0 +1,12 @@
+# @package _global_
+
+model:
+  pooling: max
+  voxel_encoder: 16
+  voxel_encoder_mul: [2, 4]
+  
+data:
+  temporal:
+    temporal_transformer: True
+
+experiment: ours_tiny

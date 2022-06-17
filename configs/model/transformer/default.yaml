@@ -1,0 +1,8 @@
+DEBUG: True
+
+N_LOG_ITEM: 2
+N_LOG_ATT: 2
+VIDEO_SUPERVOXEL: 10
+do_focus_projection:
+  - False
+  #- True

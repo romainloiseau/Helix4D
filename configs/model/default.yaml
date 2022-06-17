@@ -1,0 +1,29 @@
+log_every_n_epochs: 1
+lr_patience: 3
+load_weights: ""
+
+data:
+  name: ${data.name}
+  input_dim: ${data.input_dim}
+  output_dim: ${data.output_dim}
+  voxel_res: ${data.voxel_res}
+  split_hierarchy: ${data.split_hierarchy}
+  n_hierarchy: ${data.n_hierarchy}
+  polar_max_r: ${data.polar_max_r}
+  polar_min_z: ${data.polar_min_z}
+  polar_max_z: ${data.polar_max_z}
+  slices_per_rotation: ${data.slices_per_rotation}
+  temporal_scan_sequence: ${data.temporal_scan_sequence}
+  temporal_transformer: True
+  learning_map_inv: ${data.learning_map_inv}
+  color_map: ${data.color_map}
+  labels: ${data.labels}
+  eval_in_online_setup: ${data.eval_in_online_setup}
+  save_test_preds: ${data.save_test_preds}
+
+defaults:  
+  - /optim/adam
+  - /callbacks/monitoring/default
+  - /callbacks/failurecases/default
+  - /callbacks/earlystopping/default
+  - /callbacks/modelcheckpoint/default

@@ -1,0 +1,20 @@
+hydra:
+  searchpath:
+      - file://HelixNet/configs
+  run:
+    dir: outputs/${data.name}/${model.name}/${experiment}/${mode}/${now:%d.%b.%y-%H:%M:%S.%f}
+
+# Global configurations shared between different modules
+experiment: ours
+profile: False
+seed: 1234 # 0 stands for not fixing the seed
+mode: fit # fit, validate, test
+
+# Composing nested config with default
+defaults:
+  - _self_
+  - model/helix4d
+  - data/helixnet
+  - trainer/default
+  - override hydra/job_logging: colorlog
+  - override hydra/hydra_logging: colorlog

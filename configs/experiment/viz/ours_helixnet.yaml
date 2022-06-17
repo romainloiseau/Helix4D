@@ -1,0 +1,14 @@
+# @package _global_
+
+model:
+  data:
+    temporal:
+      scan_sequence: [-10,-20]
+      temporal_transformer: True
+    eval_in_online_setup:  False
+    batch_size: 1
+    slices_per_rotation: 5
+    feature_aug: False
+  load_weights: "pretrained_models/best_helixnet.ckpt"
+
+experiment: ours_helixnet

@@ -1,0 +1,4 @@
+_target_: helix4d.callbacks.MonitoringLogger
+
+defaults:
+  - baselogger

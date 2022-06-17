@@ -1,0 +1,6 @@
+_target_: helix4d.callbacks.FailureCasesLogger
+
+N: 10
+
+defaults:
+  - baselogger

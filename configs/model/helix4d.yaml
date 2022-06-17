@@ -1,0 +1,18 @@
+name: helix4d
+
+_target_: helix4d.model.Helix4D
+
+point_encoder: [64, 128]
+voxel_encoder: 32
+voxel_encoder_mul: [2, 2, 2]
+voxel_function: ConvLayer
+n_voxel_layers: 2
+
+decoder: residual #concatenation or residual
+pooling: learned #learned of max
+
+point_decoder: [128, 64]
+
+defaults:  
+  - default
+  - transformer/xyzt

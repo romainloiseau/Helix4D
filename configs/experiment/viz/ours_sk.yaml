@@ -1,0 +1,14 @@
+# @package _global_
+
+model:
+  load_weights: "pretrained_models/best_semantic_kitti.ckpt"
+
+data:
+  temporal:
+    temporal_transformer: True
+  eval_in_online_setup:  False
+  batch_size: 1
+  slices_per_rotation: 5
+  feature_aug: False
+
+experiment: ours_sk

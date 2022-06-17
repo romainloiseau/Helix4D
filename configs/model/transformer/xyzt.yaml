@@ -1,0 +1,38 @@
+n_layers: 2
+n_heads: 4
+dim_qk: 8
+
+mul_ff: 2
+do_ffn: False
+do_o: False
+
+samequerykey: True
+
+temperature_qk: 0
+
+dropout: .1
+
+batchnorm_output: False
+
+do_relative_positional: True
+
+relative_positional_mode: "plus"
+relative_positional_gresolution: [1.5, 1.5, 0.5]
+relative_positional_alpha: 2.
+relative_positional_beta: [3, 3, 3]
+relative_positional_gamma: 1.25
+
+temporal_buckets: True
+
+spatial_receptive_field: 6.
+force_keep_neighbours: True
+
+### Architecture ###
+# i_0 = input of block i = output of block i-1 = (i-1)_2
+#               Pre-LN                    Post-LN
+# i_1 =    i_0 + att(norm(i_0))       norm(i_0 + att(i_0))
+# i_2 =    i_1 + ffn(norm(i_1))       norm(i_1 + ffn(i_1))
+architecture: "Post-LN" #or "Pre-LN"
+
+defaults:
+  - default

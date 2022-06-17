@@ -1,0 +1,10 @@
+# @package _global_
+
+model:
+  voxel_function: AsymConvLayer
+  
+data:
+  temporal:
+    temporal_transformer: True
+
+experiment: ours

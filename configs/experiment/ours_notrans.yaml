@@ -1,0 +1,12 @@
+# @package _global_
+
+model:
+  transformer:
+    spatial_receptive_field: 0.01
+    force_keep_neighbours: False
+
+data:
+  temporal_scan_sequence: []
+  temporal_transformer: False
+
+experiment: ours_notrans

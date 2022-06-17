@@ -1,0 +1,8 @@
+# @package _global_
+
+data:
+  temporal_scan_sequence: []
+  temporal_transformer: False
+      
+
+experiment: ours_nopast

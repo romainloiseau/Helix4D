@@ -1,0 +1,6 @@
+log_every_n_epochs: ${model.log_every_n_epochs}
+
+output_dim: ${data.output_dim}
+labels: ${data.labels}
+learning_map_inv: ${data.learning_map_inv}
+color_map: ${data.color_map}

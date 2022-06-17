@@ -1,0 +1,3 @@
+[submodule "HelixNet"]
+	path = HelixNet
+	url = git@github.com:romainloiseau/HelixNet.git
