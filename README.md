@@ -1,6 +1,7 @@
 <div align="center">
   <h1>Online Segmentation of LiDAR Sequences:</h1>
   <h1>Dataset and Algorithm</h1>
+  <h1>ECCV 2022 &nbsp;&nbsp;&nbsp;&nbsp;  <img src="media/ECCV-logo3.png" width="120"></h1>
   <img src="media/mysmallhelix.gif" width="160">
 </div>
 
@@ -11,19 +12,6 @@ Official PyTorch implementation of the paper [**"Online Segmentation of LiDAR Se
 Please visit our [**webpage**](https://romainloiseau.fr/helixnet/) for more details.
 
 ![teaser_light](media/pipeline.png)
-
-#### Bibtex
-If you find this code useful in your research, please cite:
-
-```
-@article{loiseau22online,
-  title={Online Segmentation of LiDAR Sequences: Dataset and Algorithm.},
-  author={Romain Loiseau and Mathieu Aubry and Loïc Landrieu},
-  journal={arXiv:2206.08194},
-  month={June},
-  year={2022}
-}
-```
 
 ## Installation :construction_worker:
 
@@ -91,9 +79,8 @@ python ablations.py
 ```
 @article{loiseau22online,
   title={Online Segmentation of LiDAR Sequences: Dataset and Algorithm.},
-  author={Romain Loiseau and Mathieu Aubry and Loïc Landrieu},
-  journal={arXiv:2206.08194},
-  month={June},
+  author={Romain Loiseau and Mathieu Aubry and Loic Landrieu},
+  journal={ECCV},
   year={2022}
 }
 ```
